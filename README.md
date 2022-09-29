@@ -20,3 +20,11 @@ stateDiagram-v2
     code  -->  [*] : code verify success
     
 ```
+
+state
+* currentPad: 'phone' | 'code' | 'closed' | 'success'
+* phoneError: string
+* codeError: string
+* currentPhone: string
+* currentCode: string
+* country code: string
