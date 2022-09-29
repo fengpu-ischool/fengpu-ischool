@@ -10,7 +10,7 @@ You can click the Preview link to take a look at your changes.
 
 ```mermaid
 stateDiagram-v2
-    [*] --> phone
+    [*] --> phone : start phone login
     phone --> hide : close
     code --> hide : close
     phone --> code  : phone verify success
@@ -28,3 +28,14 @@ state
 * currentPhone: string
 * currentCode: string
 * country code: string
+* last code sent time: datetime
+
+
+action
+* start phone login
+* close
+* phone verify success
+* phone verify fail
+* code verify success
+* code verify fail
+* code resend
